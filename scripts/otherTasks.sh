@@ -10,3 +10,5 @@ echo 'source ~/.nvimrc' > ~/.config/nvim/init.vim
 sudo apt remove --purge libreoffice*
 sudo apt clean
 sudo apt autoremove
+
+sudo apt install atom

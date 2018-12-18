@@ -1,4 +1,6 @@
 sudo apt update
+
+sudo apt install git
 sudo apt install terminator
 
 sudo apt-add-repository ppa:neovim-ppa/stable

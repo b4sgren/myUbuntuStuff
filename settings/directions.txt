@@ -1,3 +1,4 @@
 Note:
 
 The qtcreator.desktop goes in: /usr/share/applications directory.
+Copy the stuff in terminator_config.txt into a file named config in ~/.config/terminator/ directory (just config not config.xxx)

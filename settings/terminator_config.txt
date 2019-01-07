@@ -1,0 +1,23 @@
+[global_config]
+[keybindings]
+  go_down = <alt>j
+  go_left = <alt>h
+  go_right = <alt>l
+  go_up = <alt>k
+  help = F12
+  hide_window = F1
+  layout_launcher = <Shift>F1
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.51
+    background_image = None

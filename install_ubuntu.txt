@@ -463,8 +463,8 @@ import <module>
 
 # Git
 
-git config --global user.name "Brady Anderson"
-git config --global user.email "brady.engineer@gmail.com"
+git config --global user.name "Brendon Forsgren"
+git config --global user.email "bforsgren29@gmail.com"
 
 git config --global core.editor vim
 git config --global alias.subup submodule update --init --recursive
@@ -720,7 +720,7 @@ mkdir ~/software/matlab/bad_libs
 
 sudo mv /usr/local/MATLAB/R2017b/sys/os/glnxa64/libstdc++.so.6* ~/software/matlab/bad_libs
 
-# sudo mv /usr/local/MATLAB/R2017b/cefclient/sys/os/glnxa64/libglib-2.0.so 
+# sudo mv /usr/local/MATLAB/R2017b/cefclient/sys/os/glnxa64/libglib-2.0.so
 # sudo mv /usr/local/MATLAB/R2017b/cefclient/sys/os/glnxa64/libglib-2.0.so.0
 # sudo mv /usr/local/MATLAB/R2017b/cefclient/sys/os/glnxa64/libglib-2.0.so.0.4200.2
 
@@ -1308,4 +1308,3 @@ sudo blkid -s UUID -o value /dev/sdXY
 
 
 #
-

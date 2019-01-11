@@ -1,0 +1,28 @@
+These are the steps to partition the hard drive.
+1. Type sudo fdist -l
+Using this identify the drive to partion. It will look like /dev/sd_
+
+2. Type sudo gdisk
+3. Enter the location of the drive (/dev/sd_)
+4. Hit x (for extra options)
+5. Hit z (this zaps the disk)
+After zapping this should bring you back to the start of gdisk (after entering /dev/sd_ I think)
+
+6. Now hit o (This will erase all the partitions on the drive)
+7. Now hit w (This will write all the above to the disk).
+8. Exit gdisk and restart (Not sure this is necessary).
+9. Enter gdisk (sudo gdisk)
+10. Enter /dev/sd_ for location of drive to partion
+11. Enter n (to create a new partition) (Note: I am a little iffy on the following)
+12. Hit enter for the default
+13. Hit enter for the default (Start of EFI partition)
+14. Enter +128M (End of EFI partion)
+15. The code for EFI partion is ef00
+16. Hit n for new partition
+17. Hit enter for default
+18. Enter +128M (leaves a little bit of space between EFI partion and OS)
+19. Enter -10M (leaves a little extra space at end of disk. This means the whole disk will hold the linux operating system)
+20. Hit enter. THe default code should be the code for linux.
+21. Enter w to write everything to the disk.
+22. Type sudo mkfs.vfat /dev/ds__ -n -ESP (the __ is the letter and number of the efi partion. The number should be 1)
+Now you can install ubuntu on this drive

@@ -132,6 +132,7 @@ export PS1;
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
+alias srcVideo="ls -ltrh /dev/video*"
 source ~/.rosrc
 
 export PATH=/usr/lib/ccache:$PATH

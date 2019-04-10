@@ -133,6 +133,8 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
 alias srcVideo="ls -ltrh /dev/video*"
+alias qt='~/Qt/Tools/QtCreator/bin/qtcreator'
+alias qtsh='~/Qt/Tools/QtCreator/bin/qtcreator.sh'
 source ~/.rosrc
 
 export PATH=/usr/lib/ccache:$PATH

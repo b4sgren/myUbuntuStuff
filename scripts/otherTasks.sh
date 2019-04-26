@@ -21,3 +21,7 @@ sudo apt install spotify-client
 
 sudo apt install snap
 sudo snap install pycharm-community --classic
+
+sudo add-apt-repository ppa:lyx-devel/release
+sudo apt update
+sudo apt install lyx

@@ -1,2 +1,2 @@
 source /opt/ros/melodic/setup.bash
-source ~/Documents/catkin_ws/devel/setup.bash
+#source ~/Documents/catkin_ws/devel/setup.bash

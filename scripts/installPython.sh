@@ -16,5 +16,4 @@ pip3 install pytesseract --user
 pip3 install pyopencl --user
 sudo apt install gfortran
 pip3 install slycot --user
-pip3 install --upgrade pip setuptools wheel --user
-
+pip3 install pyqtgraph --user

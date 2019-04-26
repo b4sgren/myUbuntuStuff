@@ -1,4 +1,2 @@
 source /opt/ros/melodic/setup.bash
 source ~/Documents/catkin_ws/devel/setup.bash
-alias ros_make="(cd `echo $ROS_PACKAGE_PATH | awk -Fsrc: '{print $1}'` && catkin_make)"
-alias fixCMake="rm CMakeLists.txt && cp /opt/ros/melodic/share/catkin/cmake/toplevel.cmake CMakeLists.txt"

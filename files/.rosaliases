@@ -1,0 +1,8 @@
+alias fixCMake="rm CMakeLists.txt && cp /opt/ros/melodic/share/catkin/cmake/toplevel.cmake CMakeLists.txt"
+
+alias catkin_maker='catkin_make -DCMAKE_BUILD_TYPE=Release'
+alias catkin_maked='catkin_make -DCMAKE_BUILD_TYPE=Debug'
+
+alias ros_make="(cd `echo $ROS_PACKAGE_PATH | awk -Fsrc: '{print $1}'` && catkin_make)"
+#alias ros_maked="(cd `echo $ROS_PACKAGE_PATH | awk -Fsrc: '{print $1}'` && catkin_maked)"
+#alias ros_maker="(cd `echo $ROS_PACKAGE_PATH | awk -Fsrc: '{print $1}'` && catkin_maker)"

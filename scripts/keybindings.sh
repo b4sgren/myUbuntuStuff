@@ -1,4 +1,4 @@
-echo_blue "Setting up keybindings"
+echo "Setting up keybindings"
 
 keybind='gsettings set org.gnome.desktop.wm.keybindings'
 
@@ -21,4 +21,4 @@ $keybind move-to-workspace-left "['<ctrl><super>h']"
 $keybind close "['<ctrl><alt>q']"
 $keybind show-desktop "['<super>d']"
 
-echo_green "Keybindings set up"
+echo "Keybindings set up"

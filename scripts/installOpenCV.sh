@@ -4,7 +4,7 @@
 # build-essential cmake git python-dev python-numpy
 # (these should already be installed from previous install scripts)
 
-echo_blue "installing dependencies for openCV"
+echo "installing dependencies for openCV"
 
 # other required dependencies before installing openCV
 sudo apt install libgtk-3-dev pkg-config libavcodec-dev libavformat-dev
@@ -13,12 +13,12 @@ sudo apt install libtiff-dev libjasper-dev libdc1394-22-dev ffmpeg
 sudo apt install libv41-dev libxvidcore-dev libx264-dev unzip
 sudo apt install libatlas-base-dev gfortran
 
-echo_blue "updating/upgrading apt"
+echo "updating/upgrading apt"
 
 sudo apt update
 sudo apt upgrade
 
-echo_blue "downloading openCV-4.0.1"
+echo "downloading openCV-4.0.1"
 
 ### Uncomment lines below if you want to install the extra modules
 wget -O opencv.zip https://github.com/opencv/opencv/archive/4.0.1.zip
@@ -33,7 +33,7 @@ mv opencv-4.0.1 opencv
 rm -rf opencv.zip
 #rm -rf opencv_contrib.zip
 
-echo_blue "installing openCV, this may take a while"
+echo "installing openCV, this may take a while"
 
 cd opencv
 mkdir build && cd build
@@ -47,4 +47,4 @@ sudo make install
 
 cd ~/scripts
 
-echo_green "openCV was installed"
+echo "openCV was installed"

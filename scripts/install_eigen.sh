@@ -1,4 +1,4 @@
-echo_blue "installing eigen"
+echo "installing eigen"
 
 cd ~
 git clone https://github.com/eigenteam/eigen-git-mirror.git
@@ -10,4 +10,4 @@ sudo make install
 
 cd ~/scripts
 
-echo_green "eigen installed"
+echo "eigen installed"

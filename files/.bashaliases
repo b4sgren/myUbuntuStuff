@@ -2,3 +2,4 @@
 alias srcVideo="ls -ltrh /dev/video*"
 alias qt='~/Qt/Tools/QtCreator/bin/qtcreator'
 alias qtsh='~/Qt/Tools/QtCreator/bin/qtcreator.sh'
+cdl() { cd $1; ls ${2}; }

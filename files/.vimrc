@@ -27,3 +27,10 @@ inoremap jk <esc>
 "remaps escape key to be jk
 nnoremap <leader>s :mksession<CR>
 "allows to open file by typing vim -S
+" delete without yanking
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
+
+" replace currently selected text with defualt register without yanking it
+vnoremap <leader>p "_dP
+nnoremap <silent> <C-l> :nohl<CR><C-l>

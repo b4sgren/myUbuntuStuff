@@ -1,0 +1,27 @@
+{
+    "workbench.iconTheme": "file-icons",
+    "activitusbar.activeColour": "Red",
+    "activitusbar.inactiveColour": "Blue",
+    "C_Cpp.default.cppStandard": "c++11",
+    "window.zoomLevel": 0,
+    "vim.useSystemClipboard": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["j"],
+            "after": ["g", "j"]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["k"],
+            "after": ["g", "k"]
+        }
+    ],
+    "files.autoSave": "onFocusChange"
+}

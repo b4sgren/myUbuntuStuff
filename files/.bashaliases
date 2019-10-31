@@ -6,3 +6,5 @@ alias vbrc='vim ~/.bashrc'
 alias sbrc='source ~/.bashrc'
 alias cl='clear && ls'
 cdl() { cd $1; ls ${2}; }
+code2pdf() { for var in "$@"; do vim "$var" -c ":hardcopy > temp.ps" -c ":q";
+   ps2pdf temp.ps "${var%.*}".pdf; rm temp.ps; done; }

@@ -34,3 +34,4 @@ vnoremap <leader>d "_d
 " replace currently selected text with defualt register without yanking it
 vnoremap <leader>p "_dP
 nnoremap <silent> <C-l> :nohl<CR><C-l>
+set colorcolumn=80

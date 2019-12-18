@@ -1,4 +1,6 @@
 # surround plugin.
+sudo apt install vim
+
 mkdir -p ~/.vim/pack/tpope/start
 mkdir -p ~/.vim/plugin
 cd ~/.vim/pack/tpope/start

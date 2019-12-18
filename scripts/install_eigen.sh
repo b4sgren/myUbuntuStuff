@@ -8,6 +8,6 @@ mkdir build && cd build
 cmake ..
 sudo make install
 
-cd ~/scripts
+cd ~/myUbuntuStuff/scripts
 
 echo "eigen installed"

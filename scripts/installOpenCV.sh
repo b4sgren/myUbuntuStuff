@@ -45,6 +45,6 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D INSTALL_
 make -j8
 sudo make install
 
-cd ~/scripts
+cd ~/myUbuntuStuff/scripts
 
 echo "openCV was installed"

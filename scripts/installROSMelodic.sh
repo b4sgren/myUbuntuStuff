@@ -11,3 +11,4 @@ sudo rosdep init
 rosdep update
 
 sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool build-essential
+echo "ROS Melodic installed"

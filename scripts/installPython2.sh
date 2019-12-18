@@ -11,3 +11,4 @@ pip2 install tesserocr --user
 pip2 install pytesseract --user
 pip2 install pyopencl --user
 pip2 install pyqtgraph --user
+echo "Python2 Libraries installed"

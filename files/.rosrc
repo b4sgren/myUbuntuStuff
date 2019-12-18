@@ -1,5 +1,10 @@
 source /opt/ros/melodic/setup.bash
 #source ~/Documents/catkin_ws/devel/setup.bash
 alias src_cws="source ~/Documents/catkin_ws/devel/setup.bash"
-alias ros_make="(cd `echo $ROS_PACKAGE_PATH | awk -Fsrc: '{print $1}'` && catkin_make)"
+alias src_rfws="source ~/Documents/rosflight_ws/devel/setup.bash"
+alias catkin_maker='catkin_make -DCMAKE_BUILD_TYPE=Release'
+alias catkin_maked='catkin_make -DCMAKE_BUILD_TYPE=Debug'
+ros_make() {(cd `echo $ROS_PACKAGE_PATH | awk -Fsrc: '{print $1}'` && catkin_make); }
+ros_maker() {(cd `echo $ROS_PACKAGE_PATH | awk -Fsrc: '{print $1}'` && catkin_maker); }
+ros_maked() {(cd `echo $ROS_PACKAGE_PATH | awk -Fsrc: '{print $1}'` && catkin_maked); }
 alias fixCMake="rm CMakeLists.txt && cp /opt/ros/melodic/share/catkin/cmake/toplevel.cmake CMakeLists.txt"

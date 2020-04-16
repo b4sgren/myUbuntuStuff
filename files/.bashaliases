@@ -8,3 +8,6 @@ alias cl='clear && ls'
 cdl() { cd $1; ls ${2}; }
 code2pdf() { for var in "$@"; do vim "$var" -c ":hardcopy > temp.ps" -c ":q";
    ps2pdf temp.ps "${var%.*}".pdf; rm temp.ps; done; }
+alias ssh_caedm='ssh brendon5@ssh.et.byu.edu'
+alias cmaked='cmake -DCMAKE_BUILD_TYPE=Debug'
+alias cmaker='cmake -DCMAKE_BUILD_TYPE=Release'

@@ -1,4 +1,4 @@
-echo "installing eigen"
+echo_blue "Installing Eigen"
 
 cd ~
 git clone https://github.com/eigenteam/eigen-git-mirror.git
@@ -10,4 +10,4 @@ sudo make install
 
 cd ~/myUbuntuStuff/scripts
 
-echo "eigen installed"
+echo_green "Eigen v. 3.3.7 installed"

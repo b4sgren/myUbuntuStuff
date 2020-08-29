@@ -1,5 +1,7 @@
 sudo apt update
 
+echo_blue "Installing and Configuring Git"
+
 sudo apt install git
 git config --global user.name "Brendon Forsgren"
 git config --global user.email "realpepino@gmail.com"
@@ -11,3 +13,5 @@ echo build >> ~/.config/git/.gitignore
 echo .vscode >> ~/.config/git.gitignore
 
 git config --global core.exculdesfile ~/.config/git/.gitignore
+
+echo_green "Git has been configured to realpepino@gmail.com"

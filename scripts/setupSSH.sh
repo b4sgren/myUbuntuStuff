@@ -6,12 +6,12 @@ if [ -d ~/.ssh/ ]; then
     else
         echo ".ssh dir exists with no key"
         echo "Generating an ssh key"
-        ssh-keygen -t rsa -b 4096 -C "bforsgren29@gmail.com"
+        ssh-keygen -t rsa -b 4096 -C "realpepino@gmail.com"
     fi
 else
     echo "No ssh keys exist"
     echo "Generating an ssh key"
-    ssh-keygen -t rsa -b 4096 -C "bforsgren29@gmail.com"
+    ssh-keygen -t rsa -b 4096 -C "realpepino@gmail.com"
 fi
 
 echo "Adding ssh key to ssh agent"
@@ -21,4 +21,4 @@ ssh-add ~/.ssh/id_rsa
 xclip -sel clip < ~/.ssh/id_rsa.pub
 
 echo "ssh key has been copied to clipboard"
-echo "Go add key to github and bitbucket"
+echo "Go add key to Github and Gitlab"

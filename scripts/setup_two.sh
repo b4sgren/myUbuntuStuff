@@ -1,4 +1,4 @@
-./installPython.sh
+./installPython3.sh
 ./installPython2.sh
 ./installOpenCV.sh
 ./installROSMelodic.sh

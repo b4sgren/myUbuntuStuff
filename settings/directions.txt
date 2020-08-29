@@ -2,7 +2,6 @@ Note:
 
 The qtcreator.desktop goes in: /usr/share/applications directory.
 Copy the stuff in terminator_config.txt into a file named config in ~/.config/terminator/ directory (just config not config.xxx)
-The dark1.txsprofile is a color scheme for TexStudio. It goes in ~/.config/texstudio
 The settings.json file is the settings.json for my VS Code stuff. It goes in the following directories:
-Linux: ~/.config/Code/User/
-macOS: ~/Library/Application Support/Code/User/
+-Linux: ~/.config/Code/User/
+-macOS: ~/Library/Application Support/Code/User/

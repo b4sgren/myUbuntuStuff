@@ -1,4 +1,4 @@
-echo "Setting up ssh key"
+echo_blue "Setting up ssh key"
 
 if [ -d ~/.ssh/ ]; then
     if [ -f ~/.ssh/id_rsa ]; then
@@ -20,5 +20,5 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 xclip -sel clip < ~/.ssh/id_rsa.pub
 
-echo "ssh key has been copied to clipboard"
-echo "Go add key to Github and Gitlab"
+echo_green "ssh key has been copied to clipboard"
+echo_red "Go add key to Github and Gitlab"

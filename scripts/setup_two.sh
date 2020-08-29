@@ -1,8 +1,8 @@
-./installPython3.sh
-./installPython2.sh
-./installOpenCV.sh
-./installROSMelodic.sh
-./installTerminator.sh
-./keybindings.sh
+bash installPython2.sh
+bash installPython3.sh
+bash installOpenCV.sh
+bash installROSMelodic.sh
+bash installTerminator.sh
+bash keybindings.sh
 clear
-./setupSSH.sh
+bash setupSSH.sh

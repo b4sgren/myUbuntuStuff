@@ -1,4 +1,4 @@
-echo "Setting up keybindings"
+echo_blue "Setting up keybindings"
 
 keybind='gsettings set org.gnome.desktop.wm.keybindings'
 
@@ -31,4 +31,4 @@ $keybind switch-to-workspace-7 "['<super>7']"
 $keybind switch-to-workspace-8 "['<super>8']"
 $keybind switch-to-workspace-9 "['<super>9']"
 
-echo "Keybindings set up"
+echo_green "Keybindings set up"

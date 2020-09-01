@@ -12,6 +12,7 @@ echo_blue "Installing Extensions"
 #C++ extension
 code --install-extension ms-vscode.cpptools
 code --install-extension twxs.cmake
+code --install-extension ms-vscode.cmake-tools
 
 #Python extension
 code --install-extension ms-python.python

@@ -19,3 +19,5 @@ make -j8
 make test
 sudo make install
 echo_green "Finished Installing Ceres"
+
+cd ~/myUbuntuStuff/scripts

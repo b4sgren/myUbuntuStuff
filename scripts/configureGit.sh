@@ -10,8 +10,8 @@ git config --global user.email "realpepino@gmail.com"
 mkdir -p ~/.config/git
 touch ~/.config/git/.gitignore
 echo build >> ~/.config/git/.gitignore
-echo .vscode >> ~/.config/git.gitignore
+echo .vscode >> ~/.config/git/.gitignore
 
-git config --global core.exculdesfile ~/.config/git/.gitignore
+git config --global core.excludesfile ~/.config/git/.gitignore
 
 echo_green "Git has been configured to realpepino@gmail.com"

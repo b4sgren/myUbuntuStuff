@@ -7,8 +7,8 @@ sudo apt install pybind11-dev gdb libtool make libcanberra-gtk-module xclip -y
 
 echo_green "Comman apt installs successfully done"
 
-if [! -d ~/software]; then mkdir ~/software; fi
-if [! -d ~/bin]; then mkdir ~/bin; fi
+if [ ! -d ~/software]; then mkdir ~/software; fi
+if [ ! -d ~/bin]; then mkdir ~/bin; fi
 
 echo_green "Made ~/software directory for 3rd party softwares from Git and ~/bin for common execuatbles to be placed for easy access"
 

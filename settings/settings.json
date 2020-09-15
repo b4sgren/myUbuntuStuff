@@ -2,7 +2,7 @@
     "workbench.iconTheme": "file-icons",
     "activitusbar.activeColour": "Red",
     "activitusbar.inactiveColour": "Blue",
-    "C_Cpp.default.cppStandard": "c++11",
+    "C_Cpp.default.cppStandard": "c++14",
     "window.zoomLevel": 0,
     "vim.useSystemClipboard": true,
     "vim.insertModeKeyBindings": [
@@ -23,5 +23,48 @@
             "after": ["g", "k"]
         }
     ],
-    "files.autoSave": "onFocusChange"
+    "files.autoSave": "onFocusChange",
+    "C_Cpp.updateChannel": "Insiders",
+    "C_Cpp.default.includePath":[
+        "/usr/include/**",
+        "/usr/local/include/**"
+    ],
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": null,
+    "editor.dragAndDrop": false,
+    "editor.showFoldingControls": "always",
+    "editor.tabCompletion": "on",
+    "editor.wrappingIndent": "deepIndent",
+    "editor.suggest.localityBonus": true,
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/build": true
+    },
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "workbench.editor.revealIfOpen": true,
+    "debug.console.closeOnEnd": true,
+    "debug.console.historySuggestions": false,
+    "debug.inlineValues": true,
+    "terminal.integrated.cursorBlinking": true,
+    "bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "newLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "newLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "newLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "newLine",
+    "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "newLine",
+    "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
+    "C_Cpp.vcFormat.newLine.scopeBracesOnSeparateLines": true,
+    "C_Cpp.vcFormat.space.beforeInitializerListOpenBrace": true,
+    "git.branchSortOrder": "alphabetically",
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.cursorStylePerMode.replace": "block",
+    "vim.cursorStylePerMode.visual": "block",
+    "vim.leader": ",",
+    "vim.vimrc.enable": true
 }

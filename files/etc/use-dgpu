@@ -1,0 +1,9 @@
+#!/usr/bin/sh
+# switch to dedicated graphics
+
+# see https://wiki.archlinux.org/index.php/NVIDIA_Optimus#Available_methods
+
+sudo ln -sf $HOME/myUbuntuStuff/files/etc/xorg-nvidia-drm.conf /etc/X11/xorg.conf
+echo_green "Switched to use dGPU only"
+echo_red "Need to exit X server to see change - might need to power off"
+

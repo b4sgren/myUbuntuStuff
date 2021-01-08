@@ -1,0 +1,7 @@
+prime-run, use-dgpu and use-igpu go in ~/bin 
+
+to check if switching worked run 
+glxinfo | grep OpenGL 
+or
+glxgears -info
+and see what is output to determine what graphics card is being used

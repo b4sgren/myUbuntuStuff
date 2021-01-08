@@ -3,7 +3,7 @@ echo_blue "Installing Ceres-Solver. This may take a little while"
 cd ~/software
 
 echo_blue "Installing dependencies"
-sudo apt install cmake libgoogle-glog-dev libatlas-base-dev
+sudo apt install cmake libgoogle-glog-dev libgflags-dev libatlas-base-dev
 
 sudo apt install libsuitesparse-dev
 #Needed for less than 14.04. Try this if it fails.

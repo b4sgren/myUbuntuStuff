@@ -11,3 +11,5 @@ code2pdf() { for var in "$@"; do vim "$var" -c ":hardcopy > temp.ps" -c ":q";
 alias ssh_caedm='ssh brendon5@ssh.et.byu.edu'
 alias cmaked='cmake -DCMAKE_BUILD_TYPE=Debug'
 alias cmaker='cmake -DCMAKE_BUILD_TYPE=Release'
+alias use_nvidia='sudo prime-select nvidia'
+alias use_intel='sudo prime-select intel'

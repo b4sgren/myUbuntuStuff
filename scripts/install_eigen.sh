@@ -10,4 +10,6 @@ sudo make install
 
 cd ~/myUbuntuStuff/scripts
 
+sudo ln -s /usr/include/eigen3/Eigen/ /usr/include/Eigen
+
 echo_green "Eigen v. 3.3.7 installed"

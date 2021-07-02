@@ -29,8 +29,7 @@
         "/usr/include/**",
         "/usr/local/include/**"
     ],
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.tabSize": 2,
+    "editor.wordWrap": "off",
     "editor.codeActionsOnSave": null,
     "editor.dragAndDrop": false,
     "editor.showFoldingControls": "always",
@@ -66,5 +65,17 @@
     "vim.cursorStylePerMode.replace": "block",
     "vim.cursorStylePerMode.visual": "block",
     "vim.leader": ",",
-    "vim.vimrc.enable": true
+    "vim.vimrc.enable": true,
+    "cmake.configureOnOpen": true,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "python.languageServer": "Pylance",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "python.pythonPath": "/bin/python3",
+    "cpplint.cpplintPath": "/home/brendon/.local/bin/cpplint",
+    "editor.cursorStyle": "line",
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.detectIndentation": false
 }

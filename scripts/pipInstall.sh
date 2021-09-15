@@ -8,6 +8,8 @@ sudo apt install -y  python3-dev python3-tk python3-pip
 #pip2 install --upgrade pip setuptools wheel --user
 pip3 install --upgrade pip setuptools wheel --user
 
+pip3 install --upgrade pip
+
 echo_green "Pip installed and updated to: " 
 pip3 --version
 

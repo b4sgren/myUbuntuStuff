@@ -11,6 +11,7 @@ mkdir -p ~/.config/git
 touch ~/.config/git/.gitignore
 echo build >> ~/.config/git/.gitignore
 echo .vscode >> ~/.config/git/.gitignore
+echo __pycache__ >> ~/.config/git/.gitignore
 
 git config --global core.excludesfile ~/.config/git/.gitignore
 

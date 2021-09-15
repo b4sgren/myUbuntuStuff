@@ -12,6 +12,7 @@ set wildmenu "shows visual menu for auto complete
 set lazyredraw "redraw screen only when needed
 set showmatch "shows matching brackets and such
 set incsearch "searches as characters are entered
+set clipboard=unnamedplus
 nnoremap <leader><space> :nohlsearch<CR> 
 "stops highlighting search when , space is hit
 set foldenable
@@ -26,12 +27,45 @@ nnoremap k gk
 inoremap jk <esc> 
 "remaps escape key to be jk
 nnoremap <leader>s :mksession<CR>
-"allows to open file by typing vim -S
-" delete without yanking
-nnoremap <leader>d "_d
-vnoremap <leader>d "_d
-
-" replace currently selected text with defualt register without yanking it
-vnoremap <leader>p "_dP
-nnoremap <silent> <C-l> :nohl<CR><C-l>
+""allows to open file by typing vim -S
+"" delete without yanking
+"nnoremap <leader>d "_d
+"vnoremap <leader>d "_d
+"
+"" replace currently selected text with defualt register without yanking it
+"vnoremap <leader>p "_dP
+"nnoremap <silent> <C-l> :nohl<CR><C-l>
 set colorcolumn=80
+
+" use m to for cut operations for use with cutlass"
+nnoremap m d
+xnoremap m d
+nnoremap mm dd
+nnoremap M D
+
+" yoink key bindings"
+" Swap current paste from the history
+nmap <C-n> <plug>(YoinkPostPasteSwapBack)
+nmap <C-p> <plug>(YoinkPostPasteSwapForward)
+" Remap to use yoinks paste 
+nmap p <plug>(YoinkPaste_p)
+nmap gp <plug>(YoinkPaste_gp)
+nmap P <plug>(YoinkPaste_P)
+nmap gP <plug>(YoinkPaste_gP)
+" Permanently rotate the yank history
+nmap [y <plug>(YoinkRotateBack)
+nmap ]y <plug>(YoinkRotateForward)
+" Preserve cursor position when yanking
+nmap y <plug>(YoinkYankPreserveCursorPosition)
+xmap y <plug>(YoinkYankPreserveCursorPosition)
+
+" subversive key bindings
+nmap s <plug>(SubversiveSubstitute)
+nmap ss <plug>(SubversiveSubstituteLine)
+nmap S <plug>(SubversiveSubstituteToEndOfLine)
+" do <leader>s<motion1><motion2> to sub stuff in motion 1 into motion 2
+" ex: <leader>siwip will replace all instances of the word under the cursor in the paragraph 
+" with the word I type
+nmap <leader>s <plug>(SubversiveSubstituteRange)
+xmap <leader>s <plug>(SubversiveSubstituteRange)
+nmap <leader>ss <plug>(SubversiveSubstituteWordRange)

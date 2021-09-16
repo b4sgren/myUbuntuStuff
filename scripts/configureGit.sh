@@ -14,5 +14,7 @@ echo .vscode >> ~/.config/git/.gitignore
 echo __pycache__ >> ~/.config/git/.gitignore
 
 git config --global core.excludesfile ~/.config/git/.gitignore
+#git config --global init.defaultBranch master
+git config --global pull.rebase true
 
 echo_green "Git has been configured to realpepino@gmail.com"

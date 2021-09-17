@@ -25,6 +25,7 @@ git clone https://github.com/svermeulen/vim-subversive.git
 mkdir -p ~/.vim/pack/preservim/start
 cd ~/.vim/pack/preservim/start
 git clone https://github.com/preservim/nerdtree.git
+git clone https://github.com/preservim/nerdcommenter.git
 
 cd ~/myUbuntuStuff/scripts
 echo_green "Vim plugins Installed"

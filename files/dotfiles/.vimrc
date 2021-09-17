@@ -1,6 +1,6 @@
 set ic "ignore the case in search
-set hls "highlights the text in a search
 let mapleader=","
+set hls "highlights the text in a search
 syntax enable
 set tabstop=4 "number of spaces in a tab when a file is read
 set softtabstop=4 "number of spaces a tab uses when editing
@@ -15,22 +15,29 @@ set incsearch "searches as characters are entered
 set clipboard=unnamedplus
 nnoremap <leader><space> :nohlsearch<CR> 
 "stops highlighting search when , space is hit
-nnoremap <leader><space> :nohlsearch<CR> 
 set foldenable
 set foldlevelstart=10 "open most folds by default
 set foldnestmax=10 " 10 nested fold max
-"opens a fold"
 nnoremap <space> za
+"opens a fold"
 set foldmethod=indent "fold based on indent level
 "move vertically by visual line
 nnoremap j gj
 nnoremap k gk
-"remaps escape key to be jk
 inoremap jk <esc> 
+"remaps escape key to be jk
+nnoremap <leader>s :mksession<CR>
+""allows to open file by typing vim -S
+filetype plugin on
+"" delete without yanking
+"nnoremap <leader>d "_d
+"vnoremap <leader>d "_d
+"
+"" replace currently selected text with defualt register without yanking it
+"vnoremap <leader>p "_dP
+"nnoremap <silent> <C-l> :nohl<CR><C-l>
 set colorcolumn=80
-autocmd BufRead,BufNewFile *.launch setfiletype xml
 
-" cutlass keybindings 
 " use m to for cut operations for use with cutlass"
 nnoremap m d
 xnoremap m d
@@ -63,4 +70,3 @@ nmap S <plug>(SubversiveSubstituteToEndOfLine)
 nmap <leader>s <plug>(SubversiveSubstituteRange)
 xmap <leader>s <plug>(SubversiveSubstituteRange)
 nmap <leader>ss <plug>(SubversiveSubstituteWordRange)
-

@@ -17,4 +17,7 @@ git config --global core.excludesfile ~/.config/git/.gitignore
 #git config --global init.defaultBranch master
 git config --global pull.rebase true
 
+git config --global alias.gl 'log --oneline --graph --decorate --all'
+git config --global alias.subup 'submodule update --init --recursive'
+
 echo_green "Git has been configured to realpepino@gmail.com"

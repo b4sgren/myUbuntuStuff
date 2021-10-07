@@ -26,7 +26,7 @@ nnoremap j gj
 nnoremap k gk
 inoremap jk <esc> 
 "remaps escape key to be jk
-nnoremap <leader>s :mksession<CR>
+"nnoremap <leader>s :mksession<CR>
 ""allows to open file by typing vim -S
 filetype plugin on
 "" delete without yanking
@@ -70,3 +70,11 @@ nmap S <plug>(SubversiveSubstituteToEndOfLine)
 nmap <leader>s <plug>(SubversiveSubstituteRange)
 xmap <leader>s <plug>(SubversiveSubstituteRange)
 nmap <leader>ss <plug>(SubversiveSubstituteWordRange)
+
+" nerdcommenter settings
+let g:NERDCreateDefaultMappings = 1
+let g:NERDSpaceDelims = 1 "Space after comment delimiters
+let g:NERDDefaultAlign = 'left'
+"May need to comment empty lines. Try inverting a section w/ an empty line
+let g:NERDTrimTrailingWhitespace = 1 " Trim tailing white space
+

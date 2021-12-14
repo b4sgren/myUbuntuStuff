@@ -29,7 +29,7 @@
         "/usr/include/**",
         "/usr/local/include/**"
     ],
-    "editor.wordWrap": "off",
+    "editor.wordWrap": "wordWrapColumn",
     "editor.codeActionsOnSave": null,
     "editor.dragAndDrop": false,
     "editor.showFoldingControls": "always",
@@ -70,12 +70,19 @@
     "latex-workshop.view.pdf.viewer": "tab",
     "python.languageServer": "Pylance",
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter-notebook"
     },
     "python.pythonPath": "/bin/python3",
     "cpplint.cpplintPath": "/home/brendon/.local/bin/cpplint",
     "editor.cursorStyle": "line",
     "editor.lineNumbers": "on",
     "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-    "editor.detectIndentation": false
+    "python.defaultInterpreterPath": "/bin/python3",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "editor.detectIndentation": false,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active"
 }

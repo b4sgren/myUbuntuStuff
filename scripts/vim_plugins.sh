@@ -7,6 +7,7 @@ echo_green "Vim installed"
 
 echo_blue "Installing Vim Plugins"
 
+# tpope packages
 mkdir -p ~/.vim/pack/tpope/start
 mkdir -p ~/.vim/plugin
 cd ~/.vim/pack/tpope/start
@@ -26,6 +27,12 @@ mkdir -p ~/.vim/pack/preservim/start
 cd ~/.vim/pack/preservim/start
 git clone https://github.com/preservim/nerdtree.git
 git clone https://github.com/preservim/nerdcommenter.git
+
+# vim-gitgutter
+mkdir -p ~/.vim/pack/airblade/start
+cd ~/.vim/pack/airblade/start
+git clone https://github.com/airblade/vim-gitgutter.git
+vim -u NONE -c "helptags vim-gitgutter/doc" -c q
 
 cd ~/myUbuntuStuff/scripts
 echo_green "Vim plugins Installed"

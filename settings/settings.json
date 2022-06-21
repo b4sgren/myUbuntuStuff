@@ -7,25 +7,40 @@
     "vim.useSystemClipboard": true,
     "vim.insertModeKeyBindings": [
         {
-            "before": ["j", "k"],
-            "after": ["<Esc>"]
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
         }
     ],
     "vim.normalModeKeyBindings": [
         {
-            "before": ["j"],
-            "after": ["g", "j"]
+            "before": [
+                "j"
+            ],
+            "after": [
+                "g",
+                "j"
+            ]
         }
     ],
     "vim.normalModeKeyBindings": [
         {
-            "before": ["k"],
-            "after": ["g", "k"]
+            "before": [
+                "k"
+            ],
+            "after": [
+                "g",
+                "k"
+            ]
         }
     ],
     "files.autoSave": "onFocusChange",
     "C_Cpp.updateChannel": "Insiders",
-    "C_Cpp.default.includePath":[
+    "C_Cpp.default.includePath": [
         "/usr/include/**",
         "/usr/local/include/**"
     ],
@@ -46,7 +61,6 @@
     "workbench.editor.revealIfOpen": true,
     "debug.console.closeOnEnd": true,
     "debug.console.historySuggestions": false,
-    "debug.inlineValues": true,
     "terminal.integrated.cursorBlinking": true,
     "bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
     "C_Cpp.default.intelliSenseMode": "gcc-x64",
@@ -66,23 +80,43 @@
     "vim.cursorStylePerMode.visual": "block",
     "vim.leader": ",",
     "vim.vimrc.enable": true,
-    "cmake.configureOnOpen": true,
     "latex-workshop.view.pdf.viewer": "tab",
-    "python.languageServer": "Pylance",
+    "cSpell.userWords": [
+        "exteroceptive",
+        "gtsam",
+        "hypercomplex",
+        "mothership",
+        "nonlinearities",
+        "numpy",
+        "odometry",
+        "optim",
+        "pyplot",
+        "robo",
+        "robocentric",
+        "scipy",
+        "turtlebot"
+    ],
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
+        "*.ipynb": "jupyter.notebook.ipynb"
     },
-    "python.pythonPath": "/bin/python3",
     "cpplint.cpplintPath": "/home/brendon/.local/bin/cpplint",
-    "editor.cursorStyle": "line",
-    "editor.lineNumbers": "on",
-    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-    "python.defaultInterpreterPath": "/bin/python3",
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "editor.detectIndentation": false,
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": "active"
+    "python.linting.ignorePatterns": [
+        "**/site-packages/**/*.py",
+        ".vscode/*.py",
+        "*.cpp"
+    ],
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length=80"
+    ],
+    "python.sortImports.args": [
+        "--profile",
+        "black"
+    ],
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    }
+    "editor.formatOnSave": true
 }

@@ -13,4 +13,6 @@ pip3 install pytesseract --user
 pip3 install pyopencl --user
 sudo apt install gfortran
 pip3 install pyqtgraph --user
+pip3 install black --user
+pip3 install isort --user
 echo_green "Python3 Libraries Installed"

@@ -100,6 +100,13 @@
         "*.ipynb": "jupyter.notebook.ipynb"
     },
     "cpplint.cpplintPath": "/home/brendon/.local/bin/cpplint",
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+    "[cpp]": {
+        "editor.formatOnSave": true,
+        // "editor.wordBasedSuggestions": false,
+        // "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true
+    },
     "python.linting.ignorePatterns": [
         "**/site-packages/**/*.py",
         ".vscode/*.py",
@@ -114,9 +121,10 @@
         "black"
     ],
     "[python]": {
+        "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
             "source.organizeImports": true
         }
-    }
-    "editor.formatOnSave": true
+    },
+    "editor.formatOnSave": false
 }

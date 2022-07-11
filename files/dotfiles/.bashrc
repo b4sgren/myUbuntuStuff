@@ -136,3 +136,5 @@ source ~/.bashaliases
 source ~/.rosrc
 
 export PATH=/usr/lib/ccache:$PATH
+export CMAKE_PREFIX_PATH="${HOME}/.local:${CMAKE_PREFIX_PATH}"
+export PYTHONPATH="${PYTHONPATH}:/home/brendon/software/ceres-bin/lib"  # For PyCeres

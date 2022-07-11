@@ -37,6 +37,7 @@ filetype plugin on
 "vnoremap <leader>p "_dP
 "nnoremap <silent> <C-l> :nohl<CR><C-l>
 set colorcolumn=80
+set updatetime=100
 
 " use m to for cut operations for use with cutlass"
 nnoremap m d
@@ -78,3 +79,5 @@ let g:NERDDefaultAlign = 'left'
 "May need to comment empty lines. Try inverting a section w/ an empty line
 let g:NERDTrimTrailingWhitespace = 1 " Trim tailing white space
 
+set relativenumber
+set number

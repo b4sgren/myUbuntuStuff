@@ -1,4 +1,4 @@
-source /opt/ros/melodic/setup.bash
+source /opt/ros/noetic/setup.bash
 #source ~/Documents/catkin_ws/devel/setup.bash
 alias src_cws="source ~/Documents/catkin_ws/devel/setup.bash"
 alias src_rfws="source ~/Documents/rosflight_ws/devel/setup.bash"
